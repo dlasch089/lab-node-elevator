@@ -7,7 +7,7 @@ class Elevator {
   }
 
   start() {
-    this.interval = setinterval(() => this.update(), 1000);
+    this.interval = setInterval(() => this.update(), 1000);
   }
 
   stop() {
