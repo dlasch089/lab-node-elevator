@@ -23,12 +23,16 @@ class Elevator {
   floorUp() {
     if (this.floor < this.MAXFLOOR) {
       this.floor++;
+    } else {
+      console.log(`You are in the top-floor`);
     }
   }
 
   floorDown() {
-    if (this.floor < 1) {
+    if (this.floor >= 1) {
       this.floor--;
+    } else {
+      console.log(`You are in the ground level`);
     }
   }
 
