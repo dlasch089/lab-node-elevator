@@ -1,3 +1,5 @@
+var _ = require('lodash');
+
 class Elevator {
   constructor() {
     this.floor = 0;
@@ -7,7 +9,7 @@ class Elevator {
   }
 
   start() {
-    this.interval = setInterval(() => this.update(), 1000);
+    this.interval = setInterval(() => this.update(), 1000); // The Arrow Function does not need a second context
   }
 
   stop() {
